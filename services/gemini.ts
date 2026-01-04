@@ -5,7 +5,7 @@ let ai: GoogleGenAI | null = null;
 
 const getAi = () => {
   if (!ai) {
-    ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+    ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
   }
   return ai;
 };
